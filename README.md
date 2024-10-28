@@ -36,7 +36,8 @@ Fire detection is critical for ensuring safety and reducing potential damage in 
 
 ## Dataset Download
 
-If you want to train the yolo model with different hyperparameters or configuration, download the dataset from [D-Fire Dataset](https://github.com/gaiasd/DFireDataset.git) and place it inside the current folder of this repository
+If you want to train the yolo model with different hyperparameters or configuration, download the dataset from [D-Fire Dataset](https://github.com/gaiasd/DFireDataset.git) and place it inside the current folder of this repository.
+
 
 ## Training
 
