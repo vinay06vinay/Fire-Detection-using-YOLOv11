@@ -105,3 +105,4 @@ After training the D-Fire dataset for 100 epochs, below are some validation metr
 
 ## References
 1. de Venâncio, P.V.A.B., Lisboa, A.C. & Barbosa, A.V. An automatic fire detection system based on deep convolutional neural networks for low-power, resource-constrained devices. Neural Comput & Applic 34, 15349–15368 (2022). https://doi.org/10.1007/s00521-022-07467-z
+2. [Ultralytics](https://docs.ultralytics.com/)
