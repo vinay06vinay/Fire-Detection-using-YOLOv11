@@ -98,7 +98,7 @@ After training the D-Fire dataset for 100 epochs, below are some validation metr
 - **mAP50**: 73.36%
 
 <p align="center">
-<img width="40%" alt="Performance Metrics" src="runs/detect/train/results.png">
+<img width="60%" alt="Performance Metrics" src="runs/detect/train/results.png">
 </p>
 
 
