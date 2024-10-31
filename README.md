@@ -41,8 +41,9 @@ If you want to train the yolo model with different hyperparameters or configurat
 
 ## Training
 
-1. Once the dataset is downloaded along with required dependencies. Maintain the folder structure like below
-```
+1. Once the dataset is downloaded along with the required dependencies, maintain the folder structure as shown below:
+
+    ```
     Fire-Detection-using-YOLOv11
     ├── D-Fire
     │   ├── train
@@ -56,25 +57,50 @@ If you want to train the yolo model with different hyperparameters or configurat
     ├── predict.py
     ├── best.pt
     └── last.pt
-```
-2. Make sure you activated the conda environment before using below commands to train
-```bash
+    ```
+
+2. Make sure you activate the conda environment before using the commands to train:
+
+    ```bash
     cd Fire-Detection-using-YOLOv11
     python train.py
-```
+    ```
+
+3. Refer to `train.py` for different CLI arguments that can be passed. For example:
+
+    ```bash
+    python train.py --weights /path/to/last.pt --epochs 100 --batch_size 16
+    ```
+
+
 
 ## Testing/ Prediction
 
-To test using the pre trained model on D-Fire dataset, use the weights "best.pt"/ "last.pt" along with the any image
+To test using the pre-trained model on the D-Fire dataset, use the weights `best.pt` or `last.pt` from the weights folder for any image or video data.
+
 ```bash
-    python predict.py
+# Using command line arguments. Refer to "predict.py" for the full list of options available.
+python predict.py --source bus.jpg/fire_test.mp4 --stream True
 ```
 
 ## Results
 The result of the fire detection looks something like below. Additionally, find the loss curves and confusion matrix in the runs folder
 <p align="center">
-<img width="40%" alt="Fire Detection" src="fire_test_prediction.jpg">
+<img width="40%" alt="Fire Detection" src="results/pred1.gif">
 </p>
+
+## Performance Metrics
+
+After training the D-Fire dataset for 100 epochs, below are some validation metrics achieved. For detailed graphs/images, refer to `runs/val`.
+
+- **Precision**: 74.22%
+- **Recall**: 65.82%
+- **mAP50**: 73.36%
+
+<p align="center">
+<img width="40%" alt="Performance Metrics" src="runs/detect/train/results.png">
+</p>
+
 
 
 ## References
